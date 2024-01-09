@@ -21,7 +21,7 @@
 	<parent>
 		<groupId>com.foreach.across</groupId>
 		<artifactId>across-standard-module-parent</artifactId>
-		<version>5.3.0</version>
+		<version>5.4-SNAPSHOT</version>
 		<relativePath/>
 	</parent>
 
@@ -58,8 +58,8 @@
 		<project.build.outputTimestamp>2024-01-01T00:00:00Z</project.build.outputTimestamp>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<revision>4.3.0</revision>
-		<across-autoconfigure.version>2.3.0</across-autoconfigure.version>
+		<revision>4.4-SNAPSHOT</revision>
+		<across-autoconfigure.version>2.4-SNAPSHOT</across-autoconfigure.version>
 		<dozer-spring-boot-starter.version>6.5.0</dozer-spring-boot-starter.version>
 	</properties>
 

@@ -106,7 +106,7 @@ public class TestHibernateInterceptors
 
 		User user = new User( 10, "test" );
 
-		verifyZeroInteractions( userInterceptor );
+		verifyNoInteractions( userInterceptor );
 
 		userRepository.create( user );
 
@@ -214,7 +214,7 @@ public class TestHibernateInterceptors
 		Product product = new Product( 10, "some product" );
 		productRepository.save( product );
 
-		verifyZeroInteractions( productInterceptor );
+		verifyNoInteractions( productInterceptor );
 	}
 
 	@Configuration

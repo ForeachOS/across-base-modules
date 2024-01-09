@@ -133,7 +133,7 @@ public class TestInterceptorTargetClassProxying
 
 		List<Client> clients = Arrays.asList( client, other );
 
-		verifyZeroInteractions( clientInterceptor );
+		verifyNoInteractions( clientInterceptor );
 
 		clientRepository.saveAll( clients );
 

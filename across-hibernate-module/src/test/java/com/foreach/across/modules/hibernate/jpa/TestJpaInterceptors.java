@@ -110,7 +110,7 @@ public class TestJpaInterceptors
 
 		customerRepository.delete( customer );
 
-		verifyZeroInteractions( customerInterceptor, clientInterceptor, allInterceptor );
+		verifyNoInteractions( customerInterceptor, clientInterceptor, allInterceptor );
 	}
 
 	@Test
@@ -120,7 +120,7 @@ public class TestJpaInterceptors
 		Client client = new Client();
 		client.setName( UUID.randomUUID().toString() );
 
-		verifyZeroInteractions( clientInterceptor );
+		verifyNoInteractions( clientInterceptor );
 
 		clientRepository.save( client );
 
@@ -160,7 +160,7 @@ public class TestJpaInterceptors
 
 	@Test
 	public void deleteAllJpaRepository() {
-		verifyZeroInteractions( clientInterceptor );
+		verifyNoInteractions( clientInterceptor );
 
 		clientRepository.deleteAllInBatch();
 
@@ -249,7 +249,7 @@ public class TestJpaInterceptors
 
 		List<Client> clients = Arrays.asList( client, other );
 
-		verifyZeroInteractions( clientInterceptor );
+		verifyNoInteractions( clientInterceptor );
 
 		clientRepository.saveAll( clients );
 

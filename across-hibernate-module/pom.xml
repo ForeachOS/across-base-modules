@@ -115,6 +115,11 @@
 			<plugin>
 				<groupId>com.mysema.maven</groupId>
 				<artifactId>apt-maven-plugin</artifactId>
+				<configuration>
+					<options>
+						<querydsl.generatedAnnotationClass>javax.annotation.Generated</querydsl.generatedAnnotationClass>
+					</options>
+				</configuration>
 			</plugin>
 			<plugin>
 				<!-- This defines how a specific module will be flattened -->

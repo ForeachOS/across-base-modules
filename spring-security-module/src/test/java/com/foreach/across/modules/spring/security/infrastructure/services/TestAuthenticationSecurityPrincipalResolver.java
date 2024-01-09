@@ -81,7 +81,7 @@ public class TestAuthenticationSecurityPrincipalResolver
 	public void principalNotLoadedIfOfTypeSecurityPrincipal() {
 		SecurityPrincipal principal = mock( SecurityPrincipal.class );
 		assertEquals( Optional.of( principal ), resolver.resolveSecurityPrincipal( authenticationPrincipal( principal ) ) );
-		verifyZeroInteractions( securityPrincipalService );
+		verifyNoInteractions( securityPrincipalService );
 	}
 
 	private Authentication authenticationPrincipal( Object principal ) {
